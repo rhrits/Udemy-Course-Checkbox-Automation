@@ -35,8 +35,7 @@ Go to the Udemy course page where you want to expand all sections and check all 
 ### Step 3: Copy and Paste the Script
 Copy the following script and paste it directly into the console:
 
-```
-javascript
+```javascript
 // Step 1: Expand all sections by clicking the expand icon
 document.querySelectorAll('.accordion-panel-module--expand-icon--knJ5Q').forEach(icon => {
     // Use the parent element or dispatch a mouse event to simulate a click
