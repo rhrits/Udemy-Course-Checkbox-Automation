@@ -1,24 +1,42 @@
-# Udemy Course Checkbox Automation
+# Udemy Course Checkbox Automation Script
 
-This repository contains a script to automate the process of expanding all course sections and checking all checkboxes on Udemy course pages through the browser's developer console.
+This repository contains a JavaScript script to automate the expansion of all course sections and check all checkboxes on Udemy course pages. This script can be run directly in the browser's developer console.
+
+## Table of Contents
+- [Features](#features)
+- [Setup Instructions](#setup-instructions)
+- [How to Use](#how-to-use)
+  - [Step 1: Open Udemy Course Page](#step-1-open-udemy-course-page)
+  - [Step 2: Open the Browser Console](#step-2-open-the-browser-console)
+  - [Step 3: Copy and Paste the Script](#step-3-copy-and-paste-the-script)
+  - [Step 4: Run the Script](#step-4-run-the-script)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Features
-- Automatically expands all sections of a Udemy course.
-- Automatically checks all checkboxes (e.g., lesson completion checkboxes) within a Udemy course.
+- **Expand Course Sections:** Automatically clicks and expands all course sections that may be collapsed.
+- **Checkbox Automation:** Automatically checks all lesson completion checkboxes within a course.
+
+## Setup Instructions
+You don't need to clone the repository to use this script. You can simply copy the code from the script section below and paste it into the developer console of your browser.
 
 ## How to Use
 
-### Step 1: Open the Udemy Course Page
-Navigate to the Udemy course page where you want to automate the process.
+Follow the steps below to use this script on any Udemy course page.
+
+### Step 1: Open Udemy Course Page
+Go to the Udemy course page where you want to expand all sections and check all lesson completion checkboxes.
 
 ### Step 2: Open the Browser Console
-1. Right-click anywhere on the page and select **Inspect**.
-2. In the Developer Tools, go to the **Console** tab.
+1. **Right-click** anywhere on the Udemy page.
+2. Select **Inspect** from the dropdown menu.
+3. In the Developer Tools window, navigate to the **Console** tab.
 
-### Step 3: Paste the Script
-Copy and paste the following script into the console:
+### Step 3: Copy and Paste the Script
+Copy the following script and paste it directly into the console:
 
-```javascript
+```
+javascript
 // Step 1: Expand all sections by clicking the expand icon
 document.querySelectorAll('.accordion-panel-module--expand-icon--knJ5Q').forEach(icon => {
     // Use the parent element or dispatch a mouse event to simulate a click
@@ -40,3 +58,20 @@ document.querySelectorAll('.ud-fake-toggle-input.ud-fake-toggle-checkbox').forEa
     });
     checkbox.dispatchEvent(event);  // Dispatch click event
 });
+```
+
+
+### Step 4: Run the Script
+Once you paste the script in the console, press **Enter** to run it.  
+The script will:
+- Automatically expand all sections of the course.
+- Automatically check all the lesson completion checkboxes.
+
+## Contributing
+If you would like to contribute to this project, you can follow these steps:
+1. Fork the repository.
+2. Make your changes.
+3. Create a pull request with a detailed explanation of your changes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
